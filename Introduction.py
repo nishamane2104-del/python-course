@@ -91,3 +91,26 @@ def hi():
 hi()
 var_a = 15
 print(var_a)
+#Python data types 
+# 1 Numerical data types
+# Integer
+var1 = 21 
+var2 = 20
+var3 = -268
+print("Data type of", var1, "=", type(var1))
+print("Data type of", var2, "=", type(var2))
+print("Data type of", var3, "=", type(var3))
+# Float
+var1 = 3.14
+var2 = -0.001
+var3 = 1.6e4 
+print("Data type of", var1, "=", type(var1))
+print("Data type of", var2, "=", type(var2))
+print("Data type of", var3, "=", type(var3))
+# Complex
+var1 = 2 + 3j
+var2 = -1.5 + 0.5j
+var3 = 0 + 4j
+print("Data type of", var1, "=", type(var1))
+print("Data type of", var2, "=", type(var2))
+print("Data type of", var3, "=", type(var3))
