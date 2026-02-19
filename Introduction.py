@@ -29,6 +29,7 @@ var1, var2, var3 = "nisha", "aniket", "python"
 print("variable1:", var1)
 print("variable2:", var2)
 print("variable3:", var3)
+#type casting a variable
 var1 = 9
 var2 = var1/5
 print(var2)
@@ -39,6 +40,7 @@ var2 = var1/3
 print(var2)
 var2 = int(var2)
 print(var2)
+#"Type" of variables
 var_a = 5
 var_b = "nisha"
 var_c = 20.21
@@ -49,6 +51,7 @@ print(var_b,':', type(var_b))
 print(var_c,':', type(var_c))
 print(var_d,':', type(var_d))
 print(var_e,':', type(var_e))
+#scope of variables
 def make_tea():
     """This function makes tea"""
     print("Boil water")
@@ -57,3 +60,34 @@ def make_tea():
     print("Stir well")
     print("Tea is ready!")
 make_tea()
+# global variable
+global_var = 15
+
+def add():
+    local_var = 10   # 4 spaces before this line
+    print(f'{global_var} + {local_var} = {global_var + local_var}')
+
+add()
+
+print("global_var =", global_var)
+# print("local_var =", local_var)  # This will cause error
+var_x = 13
+def add():
+    var_y = 16
+    print(f'{var_x} + {var_y} = {var_x + var_y}')
+
+add()
+print("var_x =", var_x)
+var1 = "nisha"
+def meet():
+    var2 = "aniket"
+    print(f'{var1} meets {var2}')
+meet()
+print("var1 =", var1)
+var1 = "Python is a programming language"
+def hi():
+    var2 = "and it is easy to learn"
+    print(f'{var1} {var2}')
+hi()
+var_a = 15
+print(var_a)
