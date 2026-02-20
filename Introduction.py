@@ -114,3 +114,16 @@ var3 = 0 + 4j
 print("Data type of", var1, "=", type(var1))
 print("Data type of", var2, "=", type(var2))
 print("Data type of", var3, "=", type(var3))
+# 2 Sequence data types
+# list
+list1 = [1, 0.5, "hello",1.7e2, True]
+print("Initialized List:", list1)
+print("Data type of list1 =", type(list1))
+# tuple
+tuple1 = (1, 0.5, "hello",1.7e2, True)
+print("Initialized Tuple:", tuple1)
+print("Data type of tuple1 =", type(tuple1))
+# string
+str_1 = "Hello, World!"
+print("Initialized String:", str_1)
+print("Data type of str_1 =", type(str_1))
