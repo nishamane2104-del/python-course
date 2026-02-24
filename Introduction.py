@@ -156,3 +156,36 @@ print("Value of a1:", a1)
 print("Data type of a1 =", type(a1))
 print("Value of a2:", a2)
 print("Data type of a2 =", type(a2))
+#Python numbers
+# performing arithmetic operations
+p = 10
+q = 5
+print(p,"+",q,"=",p+q)
+print(p,"-",q,"=",p-q)
+print(p,"*",q,"=",p*q)
+print(p,"/",q,"=",p/q)
+print(p,"//",q,"=",p//q)
+print(p,"%",q,"=",p%q)
+print(p,"**",q,"=",p**q)
+p = 7.6
+q = 2.3
+print(p,"+",q,"=",p+q)
+print(p,"-",q,"=",p-q)
+print(p,"*",q,"=",p*q)
+print(p,"/",q,"=",p/q)
+print(p,"//",q,"=",p//q)
+print(p,"%",q,"=",p%q)
+print(p,"**",q,"=",p**q)    
+p = 2 + 3j
+q = 1 - 4j
+print(p,"+",q,"=",p+q)
+print(p,"-",q,"=",p-q)
+print(p,"*",q,"=",p*q)
+print(p,"/",q,"=",p/q) 
+import random
+print("Random number between 1 and 20", random.randrange(1, 21))
+list1 = [1, 3, 6, 8, 10]
+print("Random Item from the list:", random.choice(list1))
+random.shuffle(list1)
+print("Shuffled list:", list1)
+print("Printing random element:", random.random())
