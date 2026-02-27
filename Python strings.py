@@ -72,4 +72,63 @@ new_str_1 = "W" + given_str[1:]
 new_str_2 = given_str.replace("learners", "to Tpoint Tech")  
 # printing results  
 print("New String 1:", new_str_1)  
-print("New String 2:", new_str_2)  
+print("New String 2:", new_str_2) 
+# common string operations
+# len() function  
+# given string  
+given_str = "tpointtech"  
+print("Given String:", given_str)  
+# using the len() function  
+num_of_chars = len(given_str)  
+print("Number of Characters:", num_of_chars)  
+#upper() and lower()
+# given string  
+given_str = "Tpoint Tech"  
+print("Given String:", given_str)  
+# using the upper() method  
+print("Uppercase String:", given_str.upper())  
+# using the lower() method  
+print("Lowercase String:", given_str.lower()) 
+#strip() and replace()
+# given string  
+str_1 = "      Nisha    "  
+print("String 1:", str_1)  
+# removing spaces from both ends  
+print("After removing spaces from both ends:")  
+print(str_1.strip())  
+str_2 = "Learning Python with Nisha is fun!"  
+print("String 2:", str_2)  
+# replacing 'fun' with 'amazing'  
+print("After replacing 'fun' with 'amazing':")  
+print(str_2.replace("fun", "amazing"))  
+# String Concatenation and Repetition
+# given string  
+str_1 = "Nisha"  
+str_2 = "Biotech"  
+# CONCATENATION: using the + operator  
+str_3 = str_1 + " " + str_2  
+print("Concatenated String:", str_3)  
+# REPETITION: using * operator  
+str_4 = str_1 * 4  
+print("Repeated String:", str_4)  
+#Using f-strings
+name=("Reva")
+age=("2")
+city=("Panchgani")
+# using f-strings to format the string
+print(f'{name} is a {age} year old girl from {city}.')
+# format()
+name = "Gaurangi"
+profession = "Student"
+school = "SJC"
+# using the format() method to format the string
+msg = "{} is a {} at {}," .format(name, profession, school)
+print(msg)
+# string membership test
+#given string
+given_str = "Nisha is a biotechnologist"
+# using in and not in keywords
+print (f"does 'b' exist in '{given_str}'?", "b" in given_str)
+print (f"does 'z' exist in '{given_str}'?", "z" in given_str)
+print (f"does 'x' not exist in '{given_str}'?", "x" not in given_str)
+print (f"does 'a' not exist in '{given_str}'?", "a" not in given_str)
