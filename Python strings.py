@@ -39,3 +39,37 @@ print("Given String:", s)
 # accessing characters using negative indexing  
 print("s[-1] =", s[-1])  
 print("s[-6] =", s[-6])  
+# string slicing
+s = "Nisha tech"
+print ("given string:", s)
+# slicing from index 1 to 4 (5-1)
+print("s[1:5]=", s[1:5])
+# slicing from index 0 to 4 (5-1)
+print("s[:5]=", s[:5])  
+# getting characters from index 3 to the end of the string
+print("s[3:]= ", s[3:])     
+# reversing a string
+print("s[::-1] =", s[::-1])
+#string immutability
+msg = "nishamane"
+print("Given string:", msg)
+#msg[0] = "N" # This will raise an error because strings are immutable
+# To change the string, we need to create a new string
+msg = "N" + msg[1:5] + "M" + msg[6:]
+print("New String:", msg)
+# deleting a string
+msg = "This string will be deleted"
+print("Before deletion:", msg)  
+del msg
+# print(msg) # This will raise an error because the string has been deleted
+# python program to update a string  
+# given string  
+given_str = "welcome learners"  
+print("Given String:", given_str)  
+# updating a string by creating a new one  
+new_str_1 = "W" + given_str[1:]  
+# replacing "learners" with "to Tpoint Tech"  
+new_str_2 = given_str.replace("learners", "to Tpoint Tech")  
+# printing results  
+print("New String 1:", new_str_1)  
+print("New String 2:", new_str_2)  
