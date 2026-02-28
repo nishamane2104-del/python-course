@@ -55,3 +55,20 @@ print(f"Ends with 'basics.': {ends_with_basics}")
   
 count_tpoint = text.count("structure")     # using count() method  
 print(f"Count of 'structure': {count_tpoint}")  
+# Python String Methods to Split and Join Strings
+# str.split(separator) - splits the string into a list of substrings based on the specified separator (default is any whitespace)
+# str.rsplit(separator) - splits the string into a list of substrings based on the specified separator, starting from the right (default is any whitespace)
+# str.splitlines() - splits the string at line breaks and returns a list of lines
+# str.join(iterable) - joins the elements of an iterable (e.g., list) into a single string, with the specified string
+sentence = "RNA-Seq is a powerful technique for transcriptome analysis."
+split_str = sentence.split()
+print(split_str)
+rsplit_str = sentence.rsplit()
+print("Right split string:", rsplit_str)
+partition_str = text.partition("sample")
+print("Partitioned string:", partition_str)
+list_of_str = ["RNA-Seq", "is", "a", "powerful", "technique"]
+joined_str = " ".join(list_of_str)
+print("Joined string:", joined_str)
+joined_str_comma = ",".join(list_of_str)
+print("Joined string with comma:", joined_str_comma)
