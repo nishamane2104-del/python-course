@@ -124,3 +124,5 @@ string = "Tpoint"
 print(f"{string:^15}")  # Center align the string within 15 characters  
 print(f"{string:<15}")  # Left align the string within 15 characters  
 print(f"{string:>15}")  # Right align the string within 15 characters 
+#python 
+# hi python
