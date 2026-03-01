@@ -55,6 +55,7 @@ print(f"Ends with 'basics.': {ends_with_basics}")
   
 count_tpoint = text.count("structure")     # using count() method  
 print(f"Count of 'structure': {count_tpoint}")  
+
 # Python String Methods to Split and Join Strings
 # str.split(separator) - splits the string into a list of substrings based on the specified separator (default is any whitespace)
 # str.rsplit(separator) - splits the string into a list of substrings based on the specified separator, starting from the right (default is any whitespace)
@@ -65,10 +66,61 @@ split_str = sentence.split()
 print(split_str)
 rsplit_str = sentence.rsplit()
 print("Right split string:", rsplit_str)
-partition_str = text.partition("sample")
+partition_str = sentence.partition("sample")
 print("Partitioned string:", partition_str)
 list_of_str = ["RNA-Seq", "is", "a", "powerful", "technique"]
 joined_str = " ".join(list_of_str)
 print("Joined string:", joined_str)
 joined_str_comma = ",".join(list_of_str)
 print("Joined string with comma:", joined_str_comma)
+#Python String Methods to Validate Strings
+# a function to validate the string  
+def validate_string(input_str):  
+  """Validates a string using various string methods."""  
+  # printing the results  
+  print(f"Given String: {input_str}")  
+  print(f"Is alphabetic (str.isalpha()): {input_str.isalpha()}")  
+  print(f"Is digit (str.isdigit()): {input_str.isdigit()}")  
+  print(f"Is alphanumeric (str.isalnum()): {input_str.isalnum()}")  
+  print(f"Is space (str.isspace()): {input_str.isspace()}")  
+  print(f"Is lowercase (str.islower()): {input_str.islower()}")  
+  print(f"Is uppercase (str.isupper()): {input_str.isupper()}")  
+  print(f"Is titlecase (str.istitle()): {input_str.istitle()}")  
+  print("-" * 30)  
+# main function  
+if __name__ == "__main__":  
+  # calling the function to validate the string  
+  validate_string("Welcome")  
+  validate_string("PYTHON")  
+  validate_string("Tpoint Tech")  
+  validate_string(" ")  
+  validate_string("hello friends")  
+#Python String Methods for String Alignment and Formatting
+# Using ljust(), rjust(), and center() for alignment  
+text = "Tpoint"  
+print(text.ljust(10, '-'))  # Left-align with '-' padding  
+print(text.rjust(10, '-'))  # Right-align with '-' padding  
+print(text.center(10, '-')) # Center-align with '-' padding  
+  
+# Using format() for string formatting with alignment  
+name = "Morgan"  
+age = 29  
+print("My name is {:10} and I am {:3} years old.".format(name, age)) # Aligned with specified width  
+  
+# Using f-strings (formatted string literals) for alignment  
+print(f"My name is {name:10} and I am {age:3} years old.")  
+  
+# Using zfill() for zero padding  
+number = "1243"  
+print(number.zfill(5))  # Pad with zeros to make it 5 characters long  
+  
+# Using format() with alignment specifiers for decimal places  
+pi = 3.14159  
+print("{:.2f}".format(pi)) # Format with 2 decimal places  
+print("{:08.2f}".format(pi)) # Format with 2 decimal places and zero-padding up to 8 characters  
+  
+# Example of alignment with custom formatting  
+string = "Tpoint"  
+print(f"{string:^15}")  # Center align the string within 15 characters  
+print(f"{string:<15}")  # Left align the string within 15 characters  
+print(f"{string:>15}")  # Right align the string within 15 characters 
