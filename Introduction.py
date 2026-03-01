@@ -6,11 +6,12 @@ print("Welcome to Python Programming")
 print("hello Aniket Shinde") 
 #this is a comment
 print("Welcome to Python Programming") 
-def welcome(John):
+def welcome(Aniket):
+    #John = "Aniket Shinde"
     """This function welcomes the user to Python Programming"""
-    print(f'hello {John}! Welcome to Python Programming')
+    print(f"hello {123}! Welcome to Python Programming")
     #calling the function
-welcome("John")
+welcome(123)
 print("Docstring:", welcome.__doc__)
 #Using String Assignment and Print
 msg = "hello Aniket Shinde"
@@ -99,7 +100,7 @@ print(var_a)
 # Integer
 var1 = 21 
 var2 = 20
-var3 = -268
+var3 = -999999999999999999999999
 print("Data type of", var1, "=", type(var1))
 print("Data type of", var2, "=", type(var2))
 print("Data type of", var3, "=", type(var3))
