@@ -126,3 +126,32 @@ print(f"{string:<15}")  # Left align the string within 15 characters
 print(f"{string:>15}")  # Right align the string within 15 characters 
 #python 
 # hi python
+# Python String Methods for String Encoding and Decoding
+# Example of encoding and decoding using UTF-8  
+text = "This is a sample text string with special characters like éàçüö."  
+  
+# encoding the string to bytes using UTF-8  
+encoded_text = text.encode('utf-8')  
+print(f"Encoded text: {encoded_text}")  
+  
+# decoding the bytes back to a string using UTF-8  
+decoded_text = encoded_text.decode('utf-8')  
+print(f"Decoded text: {decoded_text}")  
+  
+# Example of encoding and decoding using ASCII  
+# Note: ASCII only supports a limited set of characters  
+try:  
+  text.encode('ascii')  
+except UnicodeEncodeError:  
+  print("The string contains characters that cannot be encoded using ASCII.")  
+  
+# Example of using base64 encoding and decoding  
+import base64  
+  
+# encoding the string to base64  
+encoded_base64 = base64.b64encode(text.encode('utf-8'))  
+print(f"Base64 encoded text: {encoded_base64}")  
+  
+# decoding the base64 encoded string  
+decoded_base64 = base64.b64decode(encoded_base64).decode('utf-8')  
+print(f"Base64 decoded text: {decoded_base64}")  
