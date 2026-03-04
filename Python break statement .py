@@ -46,3 +46,21 @@ for row in matrix:
     # exiting the outer loop  
     if found:  
         break  
+# tables till 99 
+for i in range(1, 10):
+    for j in range(1, 10):
+        if i * j > 50:
+            break
+        print(f"{i} x {j} = {i * j}")
+# print 1 - 99 tables using loop
+for i in range(1, 10):
+    for j in range(1, 10):
+        if i * j > 99:
+            break
+        print(f"{i} x {j} = {i * j}")
+# print tables from 1 to 99 using loop 
+for i in range(1, 100):
+    for j in range(1, 100):
+        if i * j > 1000:
+            break
+        print(f"{i} x {j} = {i * j}")
