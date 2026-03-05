@@ -31,7 +31,7 @@ matrix = [
     [40, 45, 50]  
 ]  
 # element to be searched  
-target = 30  
+target = 29  
   
 found = False  # Flag to track if the number is found  
   
@@ -44,23 +44,25 @@ for row in matrix:
             found = True  
             break  # using break statement  
     # exiting the outer loop  
-    if found:  
-        break  
+if not found:
+        print("nothing found")
+if found:  
+    print("Exiting outer loop.")
+
 # tables till 99 
 for i in range(1, 10):
     for j in range(1, 10):
         if i * j > 50:
             break
-        print(f"{i} x {j} = {i * j}")
+        #print(f"{i} x {j} = {i * j}")
 # print 1 - 99 tables using loop
 for i in range(1, 10):
     for j in range(1, 10):
         if i * j > 99:
             break
-        print(f"{i} x {j} = {i * j}")
+        #print(f"{i} x {j} = {i * j}")
 # print tables from 1 to 99 using loop 
-for i in range(1, 100):
-    for j in range(1, 100):
-        if i * j > 1000:
-            break
-        print(f"{i} x {j} = {i * j}")
+for i in range(1, 100): #rows
+    for j in range(1, 11): #columns
+         break
+        #print(f"{i} x {j} = {i * j}")
