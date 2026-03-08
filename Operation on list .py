@@ -51,3 +51,32 @@ i = 0
 while i < len(mylist):
     print(mylist[i])
     i += 1  
+
+# finding the length of the list, len(list)
+one = [22, 33, 44, 55, 66, 77, 88]
+number_of_elements = len(one)
+print("Number of elements in the list:", number_of_elements)
+
+#sorting a list, 
+one = [22, 33, 44, 55, 66, 77, 88]
+print("Given list:", one)
+one.sort()
+print("Sorted list:", one)
+
+#Reversing a list
+one = [22, 33, 44, 55, 66, 77, 88]
+print("Given list:", one)
+one.reverse()
+print("Reversed list:", one)    
+
+#to find largest & smallest number
+one = [7629864981, 836269740197, 274946881296, 7498364, 754726, 73467263921]
+print("Given list:", one)
+print("Largest number:", max(one))
+print("Smallest number:", min(one))
+
+# calculating the sum of all elements in the list
+one = [22, 33, 44, 55, 66, 77, 88]
+print("Given list:", one)
+total_sum = sum(one)
+print("Sum of all elements in the list:", total_sum)
