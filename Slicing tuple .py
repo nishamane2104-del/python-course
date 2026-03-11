@@ -37,3 +37,39 @@ print ("Converting",  fruit2, "-", fruitlist)
 fruit1 = tuple(fruitlist)
 print("After changing the Element in Tuple..")
 print("Tuple=", fruit1)
+
+# adding elements into a list
+# Step 1: Convert the Tuple into a List.
+# step 2: Add the required element to the list using the append() method.
+#Step 3: Convert the List back into the Tuple.
+fruits_tuple = ("mango", "orange", "banana", "apple")
+# printing tuple before update 
+print("Before Adding a new elemet in Tuple...")
+print("Original tuple =", fruits_tuple)
+#converting the tuple into the list
+fruits_list = list(fruits_tuple)
+#changing the element of the list
+fruits_list.append("blueberry")
+print("Adding New Element -> 'blueberry'")
+#converting the list back into the tuple
+fruits_tuple = tuple(fruits_list)
+# printing the tuple after update 
+print("After adding a new element in Tuple..")
+print ("Updated Tuple =", fruits_tuple)
+
+#adding a tuple to tuple
+# Step 1: Create a new Tuple with the element(s) we want to add.
+# Step 2: Adding the new tuple to the existing tuple.
+fruits_tuple=("banana", "mango", "orange", "papaya")
+# printing the tuple before update
+print("Before Adding a New Element in Tuple...")  
+print("Original Tuple =", fruits_tuple)    
+# creating a new tuple consisting new element(s)  
+temp_tuple = ("pineapple", )  
+# adding the new tuple to the existing tuple  
+# fruits_tuple = fruits_tuple + temp_tuple  
+fruits_tuple += temp_tuple  
+# printing the tuple after update  
+print("Adding New Element -> 'pineapple'")  
+print("After Adding a New Element in Tuple...")  
+print("Updated Tuple =", fruits_tuple)  
