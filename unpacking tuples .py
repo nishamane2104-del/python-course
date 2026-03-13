@@ -84,3 +84,61 @@ if m in test_tuple:
 else:  
     print("No.", m, "is NOT present in the given tuple.")  
 
+# Tuple methods in Python : count(), index(), max(), min()
+# count syntax : tuple_name.count(item)
+# creating tuples  
+T1 = (0, 2, 3, 6, 4, 2, 5, 6, 3, 2, 2, 6, 7, 2, 7, 8, 0, 1, 9, 1)  
+T2 = ('Apple', 'Orange', 'Mango', 'Apple', 'Banana', 'Mango', 'Mango', 'Orange', 'Mango', 'Apple')  
+# counting the occurrence of 2 in the tuple T1  
+resultOne = T1.count(2)    
+# counting the occurence of 'Mango' in the tuple T2  
+resultTwo = T2.count('Mango')  
+# printing the results  
+print("Tuple T1 =>", T1)  
+print("Total Occurrence of 2 in T1 =>", resultOne)  
+# printing the results  
+print("\nTuple T2 =>", T2)  
+print("Total Occurrence of 'Mango' in T2 =>", resultTwo) 
+
+# index syntax: tuple_name.index(item)
+# creating tuples  
+T1 = (0, 2, 3, 6, 4, 2, 5, 6, 3, 2, 2, 6, 7, 2, 7, 8, 0, 1, 9, 1)  
+T2 = ('Apple', 'Orange', 'Mango', 'Apple', 'Banana', 'Mango', 'Mango', 'Orange', 'Mango', 'Apple')  
+  
+# searching for the occurrence of 2 in the tuple T1  
+resultOne = T1.index(2)  
+resultTwo = T1.index(2, 5)  
+  
+# searching for the occurence of 'Mango' in the tuple T2  
+resultThree = T2.index('Mango')  
+resultFour = T2.index('Mango', 3)  
+  
+# printing the results  
+print("Tuple T1 =>", T1)  
+print("First Occurrence of 2 in T1 =>", resultOne)  
+print("First Occurrence of 2 after 5th index in T1 =>", resultTwo)  
+  
+# printing the results  
+print("\nTuple T2 =>", T2)  
+print("First Occurrence of 'Mango' in T2 =>", resultThree)  
+print("First Occurrence of 'Mango' after 3rd index in T2 =>", resultFour)  
+
+#max() syntax: max(object)
+# creating a tuple  
+sampleTuple = (5, 3, 6, 1, 2, 8, 7, 9, 0, 4)   
+# printing the tuple for reference  
+print("Given Tuple =>", sampleTuple)   
+# using the max() method to find the largest element in the tuple  
+largest_element = max(sampleTuple)   
+# printing the result for the users  
+print("The Largest Element in the Given Tuple =>", largest_element)  
+
+# min() syntax: min (object)
+# creating a tuple  
+sampleTuple = (5, 3, 6, 1, 2, 8, 7, 9, 0, 4)    
+# printing the tuple for reference  
+print("Given Tuple =>", sampleTuple)   
+# using the min() method to find the smallest element in the tuple  
+smallest_element = min(sampleTuple)   
+# printing the result for the users  
+print("The Smallest Element in the Given Tuple =>", smallest_element)  
